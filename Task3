@@ -1,0 +1,15 @@
+[25/07, 9:04 am] Rethika Mohan Kg: const removeLastTask = function() {
+  tasks.pop();
+  console.log("Last task removed.");
+  printTasks();
+};
+[25/07, 9:04 am] Rethika Mohan Kg: let globalVar = "I am a global variable"; // Global scope
+
+function showScopes() {
+  let localVar = "I am a local variable"; // Function scope
+  console.log(globalVar);  // Accessible
+  console.log(localVar);   // Accessible
+}
+
+showScopes();
+// console.log(localVar);  // ❌ Uncaught ReferenceError: localVar is not defined
